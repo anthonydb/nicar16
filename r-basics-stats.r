@@ -9,7 +9,9 @@ head(judges.scaled)
 
 head(sort(rowSums(judges.scaled), decreasing = TRUE))
 
+# if you don't have the nlme library, uncomment the line below and run the install command
 # install.packages("nlme")
+
 library("nlme")
 scores <- data.frame(bdf)
 head(scores)
